@@ -9,3 +9,14 @@
 
 // Input: 10
 // Output: 55
+
+function intSum(int) {
+    var num = 0;
+    for (i = 1; i <= int; i++) {
+        num += i;
+    }   
+    return num
+}
+console.log(intSum(4));
+console.log(intSum(10));
+
