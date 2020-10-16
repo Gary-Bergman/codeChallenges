@@ -9,3 +9,18 @@
 
 // Input: "why?"
 // Output: 0
+
+const numVowels = str => {
+    let count = 0
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+            count++;
+        }
+    }
+    return count
+};
+
+console.log(numVowels("hello"));
+console.log(numVowels("you are great!"));
+console.log(numVowels("why?"));
+
