@@ -9,3 +9,17 @@
 
 // Input: "racecar"
 // Output: true
+
+const palindrome = str => {
+    let reverseStr = str.split("").reverse().join("");
+    console.log(reverseStr);
+    if (str === reverseStr) {
+        return true
+    }
+    return false;
+}
+
+
+console.log(palindrome("noon"));
+console.log(palindrome("horse"));
+console.log(palindrome("racecar"));
