@@ -10,15 +10,16 @@
 // Input: "racecar"
 // Output: true
 
+// Solved using built in JS methods:
+
 const palindrome = str => {
     let reverseStr = str.split("").reverse().join("");
-    console.log(reverseStr);
+    // console.log(reverseStr);
     if (str === reverseStr) {
         return true
     }
     return false;
 }
-
 
 console.log(palindrome("noon"));
 console.log(palindrome("horse"));
