@@ -11,36 +11,28 @@
 // Output: false
 
 
-const isInteger = input => {
-    // console.log(typeof input)
-    if (Math.floor(input) === input && typeof input === "number") {
-        return true;
-    }
-   return false;
-}
+const isInteger = input => Math.floor(input) === input && typeof input === "number"
 
 
-// console.log(isInteger("7"));
-// console.log(isInteger(7));
-// console.log(isInteger(4.3));
+
+console.log(isInteger("7"));
+console.log(isInteger(7));
+console.log(isInteger(4.3));
 
 
 // Solved #2
 
-const isInteger2 = input => {
-    return parseInt(input) === input;
-}
+const isInteger2 = input => parseInt(input) === input
 
-// console.log(isInteger2("7"));
-// console.log(isInteger2(7));
-// console.log(isInteger2(4.3));
+console.log(isInteger2("7"));
+console.log(isInteger2(7));
+console.log(isInteger2(4.3));
 
 
 // Solved #3
 
-const isInteger3 = input => {
-   return Number.isInteger(input)
-}
+const isInteger3 = input => Number.isInteger(input)
+
 
 
 console.log(isInteger3("7"));
