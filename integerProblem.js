@@ -20,6 +20,17 @@ const isInteger = input => {
 }
 
 
-console.log(isInteger("7"));
-console.log(isInteger(7));
-console.log(isInteger(4.3));
+// console.log(isInteger("7"));
+// console.log(isInteger(7));
+// console.log(isInteger(4.3));
+
+
+// Solved #2
+
+const isInteger2 = input => {
+    return parseInt(input) === input;
+}
+
+console.log(isInteger2("7"));
+console.log(isInteger2(7));
+console.log(isInteger2(4.3));
