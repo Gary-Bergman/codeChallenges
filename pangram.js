@@ -10,3 +10,20 @@
 
 // Input: “JavaScript is the best”
 // Output: false
+
+const pangram = str => {
+    str = str.toLowerCase();
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    for (let i = 0; i < alphabet.length; i++) {
+        if (!str.includes(alphabet[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(pangram(`Watch Jeopardy, Alex Trebek’s fun TV quiz game`));
+
+console.log(pangram(`Five hexing wizard bots jump quickly`));
+
+console.log(pangram(`JavaScript is the best`));
