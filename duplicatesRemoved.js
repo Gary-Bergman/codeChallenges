@@ -11,6 +11,8 @@
 // Output: [1,2,3,5]
 
 
+// foreach and includes method
+
 const dupRemoved = arr => {
     let newArr = []
     arr.forEach(num => { 
@@ -27,5 +29,15 @@ console.log(dupRemoved([1, 2, 3, 5]));
 
 
 
+// filter and indexOf method
 
+const dupRemoved2 = arr => {
+    let newArr2 = arr.filter((c, index) => {
+        return arr.indexOf(c) === index;
+    });
+    return newArr2;
+}
 
+console.log(dupRemoved2([1, 2, 2, 3]));
+console.log(dupRemoved2([4,5,4,4,7,5]));
+console.log(dupRemoved2([1,2,3,5]));
