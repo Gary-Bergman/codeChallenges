@@ -23,4 +23,9 @@ const dupRemoved = arr => {
 
 console.log(dupRemoved([1, 2, 2, 3]));
 console.log(dupRemoved([4,5,4,4,7,5]));
-console.log(dupRemoved([1,2,3,5]));
+console.log(dupRemoved([1, 2, 3, 5]));
+
+
+
+
+
