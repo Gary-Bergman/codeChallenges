@@ -18,3 +18,15 @@
 
 // Input: Dog
 // Output: false
+
+const validPassword = str => {
+    if (str.length >= 8 && str !== str.toUpperCase() && str !== str.toLowerCase()) {
+        return true
+    }
+    return false;
+}
+
+console.log(validPassword("RexTheDog"));
+console.log(validPassword("rexthedog"));
+console.log(validPassword("REXTHEDOG"));
+console.log(validPassword("Dog"));
