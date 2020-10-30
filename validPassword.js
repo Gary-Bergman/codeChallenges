@@ -30,3 +30,11 @@ console.log(validPassword("RexTheDog"));
 console.log(validPassword("rexthedog"));
 console.log(validPassword("REXTHEDOG"));
 console.log(validPassword("Dog"));
+
+// Condensed Version
+const validPassword2 = str => str.length >= 8 && str !== str.toUpperCase() && str !== str.toLowerCase();
+
+console.log(validPassword2("RexTheDog"));
+console.log(validPassword2("rexthedog"));
+console.log(validPassword2("REXTHEDOG"));
+console.log(validPassword2("Dog"));
