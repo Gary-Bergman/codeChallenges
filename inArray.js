@@ -10,7 +10,22 @@
 // Output: false
 
 // Input: ['code', 'dev', 'nerd']  'nerd'
-// Output: false
+// Output: true
 
 // Input: ['code', 'dev', 'nerd']  'genius'
 // Output: false
+
+
+const inArray = (arr, ele) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (ele == arr[i]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(inArray([1, 2, 3], 1));
+console.log(inArray([1, 2, 3], 4));
+console.log(inArray(['code', 'dev', 'nerd'], 'nerd'));
+console.log(inArray(['code', 'dev', 'nerd'], 'genius'));
