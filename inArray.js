@@ -18,7 +18,7 @@
 
 const inArray = (arr, ele) => {
     for (let i = 0; i < arr.length; i++) {
-        if (ele == arr[i]) {
+        if (ele === arr[i]) {
             return true;
         }
     }
