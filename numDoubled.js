@@ -16,4 +16,15 @@ const numDoubled = arr => {
 }
 
 console.log(numDoubled([1,2,3]));
-console.log(numDoubled([-1,-2,-3]));
+console.log(numDoubled([-1, -2, -3]));
+
+
+// Using the map method (Technically not creating a new function)
+arr1 = [1, 2, 3];
+const numDoubledMap = arr1.map(num => num * 2);
+console.log(numDoubledMap);
+
+
+arr2 = [-1, -2, -3];
+const numDoubledMap2 = arr2.map(num => num * 2);
+console.log(numDoubledMap2);
