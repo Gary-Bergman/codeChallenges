@@ -16,12 +16,12 @@
 const numChange = (arr, func) => {
     let resultsArray = [];
     arr.forEach(num => {
-    resultsArray.push(func(num));
+        resultsArray.push(func(num));
     });
     return resultsArray;
 }
 
 console.log(numChange([1, 2, 3], function (num) { return num * 2 }));
-console.log(numChange([1,2,3], function(num){return num + 1}));
-console.log(numChange([1,2,3], function(num) {return num /2}));
-console.log(numChange([1,2,3], function(num) {return num - 2}));
+console.log(numChange([1, 2, 3], function (num) { return num + 1 }));
+console.log(numChange([1, 2, 3], function (num) { return num / 2 }));
+console.log(numChange([1, 2, 3], function (num) { return num - 2 }));
