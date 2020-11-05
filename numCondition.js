@@ -13,3 +13,22 @@
 
 // Input: [1,5,3]  function(num){return num % 2 === 0}
 // Output: false
+
+const numCondition = (arr, func) => {
+    let count = 0;
+    arr.forEach(num => {
+        if (func(num)) {
+            count++;
+        }
+    });
+    if (count > 0) {
+        return true;
+    }
+    return false;
+}
+
+
+console.log(numCondition([1,2,3], function(num){return num === 2}));
+console.log(numCondition([1,5,3], function(num){return num === 2}));
+console.log(numCondition([1,2,3], function(num){return num % 2 === 0}));
+console.log(numCondition([1,5,3], function(num){return num % 2 === 0}));
