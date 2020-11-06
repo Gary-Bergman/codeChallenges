@@ -23,4 +23,13 @@ const filterFunc = (arr, cb) => {
 
 console.log(filterFunc([1, 2, 3], function(num) { return num === 2 }));
 console.log(filterFunc([1, 2, 3, 4, 5, 6], function(num) { return num % 2 === 0 }));
-console.log(filterFunc([1, 2, 3, 4, 5, 6], function(num) { return num > 3 }));
+console.log(filterFunc([1, 2, 3, 4, 5, 6], function (num) { return num > 3 }));
+
+
+// Using filter method
+
+const filterFunc2 = (arr, cb) => arr.filter(num => (cb(num)));
+
+console.log(filterFunc2([1, 2, 3], function(num) { return num === 2 }));
+console.log(filterFunc2([1, 2, 3, 4, 5, 6], function(num) { return num % 2 === 0 }));
+console.log(filterFunc2([1, 2, 3, 4, 5, 6], function (num) { return num > 3 }));
