@@ -10,3 +10,17 @@
 
 // Input: [1, 2, 3, 4, 5, 6]  function(num) { return num > 3 }
 // Output: [4, 5, 6]
+
+const filterFunc = (arr, cb) => {
+    let newArray = [];
+    arr.forEach(num => {
+        if (cb(num)) {
+            newArray.push(num)
+        }
+    });
+    return newArray;
+}
+
+console.log(filterFunc([1, 2, 3], function(num) { return num === 2 }));
+console.log(filterFunc([1, 2, 3, 4, 5, 6], function(num) { return num % 2 === 0 }));
+console.log(filterFunc([1, 2, 3, 4, 5, 6], function(num) { return num > 3 }));
