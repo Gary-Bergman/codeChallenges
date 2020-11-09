@@ -9,3 +9,12 @@
 
 // Input: 4
 // Output: 4
+
+
+const reverseDigits = num => parseInt(num.toString().split("").reverse().join(""));
+
+console.log(reverseDigits(1234));
+console.log(reverseDigits(1201));
+console.log(reverseDigits(4));
+
+
