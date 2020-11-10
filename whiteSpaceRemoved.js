@@ -26,3 +26,20 @@ const whiteSpaceRemoved2 = str => str.toLowerCase().replace(/\s/g,'');
 console.log(whiteSpaceRemoved2('Tammer Galal'));
 console.log(whiteSpaceRemoved2('    favorite tree    ever'))
 console.log(whiteSpaceRemoved2('one word'))
+
+
+// using no regex
+
+const whiteSpaceRemoved3 = str => {
+    let newStr = '';
+    for (let i = 0; i < str.length; i++){
+        if (str[i] !== " ") {
+            newStr += str[i]
+        }
+    }
+    return newStr.toLowerCase();
+}
+
+console.log(whiteSpaceRemoved3('Tammer Galal'));
+console.log(whiteSpaceRemoved3('    favorite tree    ever'))
+console.log(whiteSpaceRemoved3('one word'))
