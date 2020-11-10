@@ -9,3 +9,12 @@
 
 // Input: one word
 // Output: oneword
+
+
+const whiteSpaceRemoved = str => str.toLowerCase().split(/\s/).join('');
+
+console.log(whiteSpaceRemoved('Tammer Galal'));
+console.log(whiteSpaceRemoved('    favorite tree    ever'))
+console.log(whiteSpaceRemoved('one word'))
+
+
