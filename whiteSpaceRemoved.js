@@ -18,3 +18,11 @@ console.log(whiteSpaceRemoved('    favorite tree    ever'))
 console.log(whiteSpaceRemoved('one word'))
 
 
+    
+
+// Solved using more regex
+const whiteSpaceRemoved2 = str => str.toLowerCase().replace(/\s/g,'');
+
+console.log(whiteSpaceRemoved2('Tammer Galal'));
+console.log(whiteSpaceRemoved2('    favorite tree    ever'))
+console.log(whiteSpaceRemoved2('one word'))
