@@ -12,3 +12,8 @@
 // This challenge is easier than it looks.
 // Round your result to two decimal places.
 
+// const lineLength = ([x1, y1], [x2, y2]) => {
+//     return Math.sqrt(((x2 - x1)**2) + ((y2, y1)**2)).toFixed(2);
+// }
+
+// console.log(lineLength(([15, 7], [22, 11])));
