@@ -13,3 +13,16 @@
 // Notes
 // This exercise is designed as an introduction to higher order functions (functions which use other functions to do their work).
 
+const whichIsLarger = (f, g) => {
+    if (f() > g()) {
+        return "f";
+    } else if (f() < g()) {
+        return "g";
+    } else {
+        return "neither";
+    }
+}
+
+console.log(whichIsLarger(() => 5, () => 10));
+console.log(whichIsLarger(() => 25,  () => 25));
+console.log(whichIsLarger(() => 505050, () => 5050));
