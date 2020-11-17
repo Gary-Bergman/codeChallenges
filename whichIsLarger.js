@@ -26,3 +26,12 @@ const whichIsLarger = (f, g) => {
 console.log(whichIsLarger(() => 5, () => 10));
 console.log(whichIsLarger(() => 25,  () => 25));
 console.log(whichIsLarger(() => 505050, () => 5050));
+
+
+// Using Ternary
+
+const whichIsLarger2 = (f, g) => f() > g() ? 'f' : g() > f() ? 'g' : 'neither';
+
+console.log(whichIsLarger2(() => 5, () => 10));
+console.log(whichIsLarger2(() => 25,  () => 25));
+console.log(whichIsLarger2(() => 505050, () => 5050));
