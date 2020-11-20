@@ -56,6 +56,22 @@
 
 // Complete the hurdleRace function below.
 function hurdleRace(k, height) {
-
+    // console.log("k = ", k, "height = ", height)
+    let max = 0
+    for (let i = 0; i < height.length; i++) {
+        if (height[i] > max) {
+            max = height[i]
+        }
+    }
+    let result = max - k;
+    
+    if (k < max) {
+        return result;
+    }
+    return 0;
 
 }
+
+console.log(hurdleRace(4, [1, 6, 3, 5, 2]));
+console.log(hurdleRace(1, [0, 1, 2, 4, 8]));
+console.log(hurdleRace(6, [0, 5, 4, 4, 3]));
